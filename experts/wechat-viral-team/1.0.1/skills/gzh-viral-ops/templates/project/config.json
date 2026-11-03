@@ -1,0 +1,50 @@
+{
+  "_说明": "全链路唯一配置源。脚本、SKILL、references 里的数字都应以本文件为准；改这里，脚本立即生效。",
+  "_迁移提示": "本文件由专家包自带，account 段全部为占位值。使用前必须填写自己的公众号名称、yanxu_account_id 与 ima_kb_id，否则发布无法进行。",
+  "version": 3,
+  "updated": "2026-10-28",
+  "account": {
+    "name": "我的公众号",
+    "series": "普通人视角",
+    "yanxu_account_id": "",
+    "ima_kb_id": "",
+    "ima_kb_name": ""
+  },
+  "limits": {
+    "title_yanxu": 30,
+    "title_wechat": 64,
+    "abstract": 120,
+    "cover_kb": 2000,
+    "body_kb": 1000,
+    "body_chars_min": 1200,
+    "body_chars_max": 2000,
+    "head_max": 130,
+    "para_soft": 120,
+    "para_hard": 160,
+    "imgs_min": 3,
+    "imgs_max": 5,
+    "emoji_max": 8,
+    "pick_top": 3
+  },
+  "assets": {
+    "trim_px": 72,
+    "quality": 85,
+    "suffix": "_clean",
+    "cover_pattern": "cover|封面",
+    "exts": [".png", ".jpg", ".jpeg", ".webp"]
+  },
+  "publish": {
+    "channel": "yanxu",
+    "theme_id": "blackgold",
+    "theme_note": "言序主题样式会被微信端清洗，实际呈现为素排版，不要期待排版效果"
+  },
+  "paths": {
+    "assets_dir": "配图",
+    "assets_raw": "配图/raw",
+    "rules": "rules/lint_rules.json",
+    "ledger": "发布台账.md",
+    "topics": "选题库.md",
+    "skill": "",
+    "pitfalls": ""
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "source": "seed",
+  "note": "豆瓣图书热门榜 2026-10 快照（由 WebFetch 抓取真实数据，用于离线/限流兜底；在用户本机运行 fetch_bestsellers.py 会优先走真实 HTTP 抓取）",
+  "fetched_at": "2026-10-27",
+  "books": [
+    {"rank": 1, "title": "落在我身上的雨", "author": "陆庆屹", "cat": "文学", "score": "9.1", "url": "https://book.douban.com/subject/38461487/"},
+    {"rank": 2, "title": "无论如何，潜水", "author": "河美娜", "cat": "文学", "score": "7.9", "url": "https://book.douban.com/subject/38531717/"},
+    {"rank": 3, "title": "爱的辛劳：一名心理咨询师见证的欲望、创伤与人间", "author": "[美] 斯蒂芬·格罗斯", "cat": "社会纪实", "score": "8.3", "url": "https://book.douban.com/subject/38420818/"},
+    {"rank": 4, "title": "啸风山庄：插图袖珍本", "author": "[英] 艾米莉·勃朗特", "cat": "小说", "score": "9.1", "url": "https://book.douban.com/subject/38568894/"},
+    {"rank": 5, "title": "恐龙的移动轨迹", "author": "[韩] 金和珍", "cat": "小说", "score": "8.0", "url": "https://book.douban.com/subject/38591875/"},
+    {"rank": 6, "title": "零诺", "author": "行烟烟", "cat": "小说", "score": "8.8", "url": "https://book.douban.com/subject/38241364/"},
+    {"rank": 7, "title": "伊加利亚的女儿们", "author": "[挪] 格德·布兰腾伯格", "cat": "小说", "score": "9.1", "url": "https://book.douban.com/subject/38192362/"},
+    {"rank": 8, "title": "恐惧", "author": "[奥地利] 斯蒂芬·茨威格", "cat": "小说", "score": "8.6", "url": "https://book.douban.com/subject/38510363/"},
+    {"rank": 9, "title": "西塔：一个东北街区中的空间、国家与日常", "author": "宋念申", "cat": "历史文化", "score": "8.7", "url": "https://book.douban.com/subject/38067357/"},
+    {"rank": 10, "title": "继女", "author": "[英] 卡罗琳·布莱克伍德", "cat": "小说", "score": "8.1", "url": "https://book.douban.com/subject/38431429/"},
+    {"rank": 11, "title": "隐蔽嫌疑人", "author": "陈浩基", "cat": "小说", "score": "7.8", "url": "https://book.douban.com/subject/37147122/"},
+    {"rank": 12, "title": "翠鸟谋杀案", "author": "[英] 安东尼·霍洛维茨", "cat": "小说", "score": "7.7", "url": "https://book.douban.com/subject/38229491/"},
+    {"rank": 13, "title": "另一个国度：在20世纪废墟上的漫游", "author": "杨潇", "cat": "文学", "score": "8.8", "url": "https://book.douban.com/subject/38447083/"},
+    {"rank": 14, "title": "傍晚的邂逅", "author": "[韩] 朴婉绪", "cat": "小说", "score": "8.5", "url": "https://book.douban.com/subject/37832891/"},
+    {"rank": 15, "title": "我住长江尾", "author": "段志强", "cat": "社会纪实", "score": "9.0", "url": "https://book.douban.com/subject/38590318/"},
+    {"rank": 16, "title": "品味与阶层：漫画解读布尔迪厄的区分理论", "author": "[法] 蒂菲娜·里维埃尔", "cat": "绘本漫画", "score": "8.6", "url": "https://book.douban.com/subject/37491978/"},
+    {"rank": 17, "title": "无人观看", "author": "刘天昭", "cat": "小说", "score": "8.2", "url": "https://book.douban.com/subject/38591073/"},
+    {"rank": 18, "title": "抄写员巴托比", "author": "[美] 赫尔曼·梅尔维尔", "cat": "小说", "score": "8.0", "url": "https://book.douban.com/subject/38392174/"},
+    {"rank": 19, "title": "它的正义", "author": "Papi妈妈", "cat": "社会纪实", "score": "8.8", "url": "https://book.douban.com/subject/38565270/"},
+    {"rank": 20, "title": "活水", "author": "[英] 罗伯特·麦克法伦", "cat": "文学", "score": "9.2", "url": "https://book.douban.com/subject/38495054/"}
+  ]
+}

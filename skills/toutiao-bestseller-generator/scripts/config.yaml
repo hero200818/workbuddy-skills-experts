@@ -1,0 +1,64 @@
+# 头条号爆款文章生成器 - 配置文件
+# ============================================
+
+# API 配置（支持豆包API / OpenAI兼容API）
+api:
+  # 服务商：doubao（豆包）/ openai（OpenAI兼容）
+  provider: "doubao"
+  # API Key（必填）
+  api_key: "你的API_KEY"
+  # API 地址
+  # 豆包：https://ark.cn-beijing.volces.com/api/v3
+  # OpenAI：https://api.openai.com/v1
+  base_url: "https://ark.cn-beijing.volces.com/api/v3"
+  # 模型名称
+  # 豆包：doubao-pro-32k / doubao-lite-32k 等
+  # OpenAI：gpt-4o / gpt-3.5-turbo 等
+  model: "doubao-pro-32k"
+  # 生成参数
+  temperature: 0.8
+  max_tokens: 4000
+
+# 生成配置
+generation:
+  # 每批生成文章数量
+  article_count: 10
+  # 每篇文章目标字数
+  target_words: 3000
+  # 文章风格：literature（文学/经典）/ history（历史）/ parenting（育儿）/ 
+  #          selfhelp（成长）/ business（商业）/ science（科普）/ custom（自定义）
+  style: "literature"
+  # 是否自动生成图片（需要安装 markpic + pandoc + chromium）
+  generate_images: true
+  # 图片风格：ios（iOS液态玻璃）/ xiaohongshu（笔记本手账）/ default（默认长图）
+  image_style: "ios"
+  # 图片标签（封面文字）
+  image_tag: "好书推荐"
+  # 图片作者署名（封面底部，留空则不署名）
+  image_author: "读读书悦悦己"
+
+# 输出配置
+output:
+  # 输出目录（支持相对路径和绝对路径）
+  output_dir: "./output"
+  # 文件夹命名格式：{work} 为作品名，{date} 为日期
+  folder_format: "{work}_{date}"
+  # 是否生成 Word 文档
+  generate_word: true
+  # 是否生成 Markdown
+  generate_markdown: true
+  # 是否在每个文章文件夹中包含图片
+  images_in_folder: true
+
+# 写作规范（可根据需要调整）
+writing_rules:
+  # 标题公式：悬念式 / 反常识 / 数字清单 / 对比式 / 痛点式
+  title_formula: "悬念式"
+  # 开头方式：场景化 / 提问式 / 数据冲击 / 故事引入
+  opening_style: "场景化"
+  # 结尾方式：互动引导 / 金句总结 / 行动号召
+  ending_style: "互动引导"
+  # 是否引用原文
+  quote_original: true
+  # 去AI味（使用口语化表达）
+  remove_ai_taste: true

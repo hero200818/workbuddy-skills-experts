@@ -1,0 +1,19 @@
+{
+  "id": "P01_d100_n4",
+  "day": 100,
+  "number": 4,
+  "title": "外卖/吃饭日常（已验证30.3%点击率爆",
+  "theme": "外卖/吃饭日常（已验证30.3%点击率爆款）",
+  "hook_type": "评论钩子",
+  "image_suggestion": "暖色调氛围感图片",
+  "content": "上回那事，评论区聊得挺热闹，今天再补个后续。加班点外卖，备注写不要葱多放醋。送来一看，香菜堆成山，辣度为零。我把袋子拎进办公室，汤还在往外渗。同事问我怎么了，我说没事，就是手滑了。本来想给差评，看他那样又不忍心了。大家都不容易啊。你们呢？",
+  "content_length": 119,
+  "status": "pending",
+  "deep_version_version": "3.0",
+  "created_at": "2026-10-21",
+  "auto_generated": true,
+  "structure": "冲突-发展-留白三段式",
+  "is_followup": true,
+  "followup_of": "P01_d12_n1",
+  "followup_series": "打工人/职场+外卖日常"
+}

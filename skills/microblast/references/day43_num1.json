@@ -1,0 +1,17 @@
+{
+  "id": "P01_d43_n1",
+  "persona": "P01",
+  "day": 43,
+  "number": 1,
+  "title": "买了个网课99块说30天学会Python看了第一集就没打开过",
+  "theme": "省钱日常+数字+自嘲",
+  "hook_type": "强数字+细节+自嘲+评论钩子",
+  "image_suggestion": "电脑屏幕上网课页面，旁边是咖啡杯，暖色调",
+  "content": "上个月买了个网课，99块钱，说30天学会Python。当时觉得要提升自己，不能再混了。看了第一集，讲得还不错。第二集打开了5分钟，接了个工作电话，就再也没打开过。今天收拾桌面看到那个课程链接，点开一看，已经过期了。99块钱买了个'我要学习'的错觉。35岁了，还是三分钟热度。你们买过这种网课吗？",
+  "content_length": 138,
+  "status": "pending",
+  "created_at": "2026-09-22T10:36:00",
+  "published_at": null,
+  "is_deep_version": true,
+  "deep_version_version": "2.0"
+}

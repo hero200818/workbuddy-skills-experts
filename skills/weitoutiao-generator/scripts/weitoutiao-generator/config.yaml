@@ -1,0 +1,69 @@
+# ============================================================
+# 微头条爆款批量生成器 - 主配置
+# 所有字段均可按需调整，脚本读取本文件驱动生成逻辑
+# ============================================================
+
+project:
+  name: "微头条爆款批量生成器"
+  version: "1.0.0"
+
+generation:
+  count: 12                      # 每次批量生成条数
+  seed: 20260818                # 随机种子（保证可复现；设为 null 则随机）
+  category_weights:             # 选题类目权重（影响随机抽样分布，自动归一化）
+    情感: 0.18
+    社会: 0.15
+    职场: 0.12
+    健康: 0.12
+    美食: 0.10
+    科技: 0.10
+    历史: 0.08
+    财经: 0.08
+    育儿: 0.04
+    宠物: 0.03
+  allow_repeat_category: false   # 同批次是否允许同一类目重复出现
+
+content:
+  title:
+    max_len: 28                 # 微头条标题建议上限（头条偏短标题利于点击）
+    variants: 3                 # 每个选题生成多少个标题候选
+  body:
+    min_len: 100
+    max_len: 600
+    optimal_len: 280            # 推荐篇幅中心（完读率友好）
+  emoji_per_100_chars: 1.1      # 每百字 emoji 密度
+  hashtags:
+    count: [2, 3]               # 话题标签数量区间
+    style: "double_hash"        # double_hash: #话题# ；single_hash: #话题
+
+platform:
+  max_total_len: 2000           # 微头条正文硬上限
+  recommend_images: "3-6张"     # 配图建议
+  best_post_windows:            # 推荐发布时段（冷启动流量友好）
+    - "07:00-09:00"
+    - "12:00-13:00"
+    - "18:00-22:00"
+  min_interaction_rate_target: 0.05   # 目标互动率（用于爆款评分基线）
+
+llm:
+  enabled: false                # 设为 true 启用大模型后端（需安装 openai 并配置 key）
+  provider: "openai"            # openai / custom
+  base_url: ""                  # 兼容中转/私有部署留空则用官方
+  api_key: ""                   # 请在环境变量或此处填写
+  model: "gpt-4o-mini"
+  temperature: 0.9
+  max_tokens: 800
+  fallback_to_template: true    # 调用失败时回退到模板引擎
+
+export:
+  formats: ["json", "csv", "md", "txt"]   # 同时导出多种格式
+  output_dir: "output"
+  filename_prefix: "weitoutiao"
+  csv_delimiter: ","
+  include_score: true           # 导出时附带爆款潜力评分
+
+validator:
+  strict_mode: true             # 严格模式：命中严重/警告级问题直接剔除该条
+  auto_fix_limit_words: true    # 自动改写广告法极限词（最→很 等）
+  custom_banned_words: []       # 用户自定义禁用词（追加到敏感词库）
+  min_score_to_keep: 60         # 低于该评分的条目不进入导出（0 表示不过滤）

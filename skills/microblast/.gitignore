@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/comment_snapshot.json
+data/*.tracking.csv
+memory/*_memory.json
+dashboard.html
+.DS_Store

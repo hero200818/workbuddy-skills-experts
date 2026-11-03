@@ -1,0 +1,165 @@
+{
+  "name": "content-matrix-studio",
+  "version": "1.3.0",
+  "description": "A content matrix expert team that unifies account diagnosis, viral writing, visual packaging and data review into one production line for Toutiao, Xiaohongshu (RED) and WeChat Official Accounts.",
+  "author": {
+    "name": "读读书悦悦己",
+    "email": ""
+  },
+  "agents": [
+    "./agents/content-matrix-lead.md",
+    "./agents/toutiao-operator.md",
+    "./agents/rednote-operator.md",
+    "./agents/wechat-operator.md",
+    "./agents/visual-director.md",
+    "./agents/data-reviewer.md"
+  ],
+  "expertType": "team",
+  "agentName": "content-matrix-lead",
+  "teamInfo": {
+    "leadAgent": "content-matrix-lead",
+    "memberAgents": [
+      "toutiao-operator",
+      "rednote-operator",
+      "wechat-operator",
+      "visual-director",
+      "data-reviewer"
+    ]
+  },
+  "displayName": {
+    "en": "Content Matrix Studio",
+    "zh": "内容矩阵专家团"
+  },
+  "profession": {
+    "en": "Content Matrix Studio",
+    "zh": "内容矩阵专家团"
+  },
+  "displayDescription": {
+    "en": "An all-in-one content factory: diagnose accounts, lock personas, mass-produce viral copy, auto-generate visuals and run data-driven hit-chasing reviews across Toutiao, Xiaohongshu and WeChat Official Accounts.",
+    "zh": "一站式自媒体内容工厂：账号诊断、批量成稿、一键配图、数据复盘追爆，覆盖头条、小红书与公众号全链路。"
+  },
+  "avatar": "avatars/content-matrix-lead.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "诊断我的头条号，并出一周微头条排期",
+    "en": "Audit my Toutiao account and draft a one-week micro-post schedule"
+  },
+  "plugin": "content-matrix-studio",
+  "keywords": [
+    "自媒体",
+    "爆款写作",
+    "头条运营",
+    "小红书运营",
+    "公众号运营",
+    "图文卡片",
+    "内容矩阵"
+  ],
+  "tags": [
+    {
+      "en": "Viral Writing",
+      "zh": "爆款写作"
+    },
+    {
+      "en": "WeChat Operation",
+      "zh": "公众号运营"
+    },
+    {
+      "en": "Content Cards",
+      "zh": "图文卡片"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Audit my Toutiao account and draft a one-week micro-post schedule",
+      "zh": "诊断我的头条号，并出一周微头条排期"
+    },
+    {
+      "en": "Write a 3000-char WeChat deep-dive article with cover and push to drafts",
+      "zh": "写一篇3000字公众号深度文，配封面并存草稿箱"
+    },
+    {
+      "en": "Turn this article into a 6-image Xiaohongshu note pack",
+      "zh": "把这篇文章做成小红书6图笔记发布包"
+    }
+  ],
+  "members": [
+    {
+      "id": "content-matrix-lead",
+      "name": {
+        "en": "Wenshu",
+        "zh": "文枢"
+      },
+      "profession": {
+        "en": "Content Chief Editor",
+        "zh": "内容总编"
+      },
+      "avatar": "avatars/content-matrix-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "toutiao-operator",
+      "name": {
+        "en": "Dayuan",
+        "zh": "闻达远"
+      },
+      "profession": {
+        "en": "Toutiao Operator",
+        "zh": "头条操盘手"
+      },
+      "avatar": "avatars/toutiao-operator.png",
+      "role": "member"
+    },
+    {
+      "id": "rednote-operator",
+      "name": {
+        "en": "Shuyi",
+        "zh": "洪书意"
+      },
+      "profession": {
+        "en": "RED Operator",
+        "zh": "小红书操盘手"
+      },
+      "avatar": "avatars/rednote-operator.png",
+      "role": "member"
+    },
+    {
+      "id": "wechat-operator",
+      "name": {
+        "en": "Yanqiu",
+        "zh": "沈砚秋"
+      },
+      "profession": {
+        "en": "WeChat Operator",
+        "zh": "公众号操盘手"
+      },
+      "avatar": "avatars/wechat-operator.png",
+      "role": "member"
+    },
+    {
+      "id": "visual-director",
+      "name": {
+        "en": "Danqing",
+        "zh": "顾丹青"
+      },
+      "profession": {
+        "en": "Visual Design Director",
+        "zh": "视觉设计总监"
+      },
+      "avatar": "avatars/visual-director.png",
+      "role": "member"
+    },
+    {
+      "id": "data-reviewer",
+      "name": {
+        "en": "Jingming",
+        "zh": "秦镜明"
+      },
+      "profession": {
+        "en": "Data Review Analyst",
+        "zh": "数据复盘师"
+      },
+      "avatar": "avatars/data-reviewer.png",
+      "role": "member"
+    }
+  ]
+}

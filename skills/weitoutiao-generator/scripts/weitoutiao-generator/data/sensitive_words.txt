@@ -1,0 +1,62 @@
+# 微头条合规敏感词库
+# 格式：词语||级别    级别：SEVERE（严重，直接剔除） / WARN（警告，建议改写或剔除）
+# 说明：本库聚焦「平台规则与法律法规」层面的合规拦截，
+#       不含政治类目；生成内容默认规避敏感领域，仅做通用合规兜底。
+
+# ===== 严重违规（违法/不良，直接剔除）=====
+赌博||SEVERE
+博彩||SEVERE
+私彩||SEVERE
+毒品||SEVERE
+枪支||SEVERE
+诈骗||SEVERE
+传销||SEVERE
+代孕||SEVERE
+走私||SEVERE
+洗钱||SEVERE
+色情||SEVERE
+暴力||SEVERE
+
+# ===== 广告法极限词（绝对化用语，建议改写）=====
+最佳||WARN
+第一||WARN
+唯一||WARN
+顶级||WARN
+绝无仅有||WARN
+国家级||WARN
+世界级||WARN
+极致||WARN
+100%||WARN
+百分之百||WARN
+包治||WARN
+根治||WARN
+永久||WARN
+独家||WARN
+首选||WARN
+领导者||WARN
+完美||WARN
+万能||WARN
+神效||WARN
+一针见效||WARN
+
+# ===== 站外引流 / 导流违规（头条限制站外引流）=====
+加微信||WARN
+加我微信||WARN
+微信号||WARN
+公众号||WARN
+二维码||WARN
+扫码||WARN
+扫一扫||WARN
+私聊||WARN
+私信我||WARN
+加群||WARN
+加V||WARN
+点击下方链接||WARN
+点击链接||WARN
+回复1领取||WARN
+
+# ===== 医疗/功效虚假承诺（非专业资质不得断言）=====
+包治百病||WARN
+药到病除||WARN
+永不反弹||WARN
+彻底治愈||WARN

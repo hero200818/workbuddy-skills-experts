@@ -1,0 +1,2 @@
+# MicroBlast 仅使用 Python 标准库（json/os/csv/re/datetime/collections/glob）
+# 无需安装任何第三方包。要求 Python >= 3.8

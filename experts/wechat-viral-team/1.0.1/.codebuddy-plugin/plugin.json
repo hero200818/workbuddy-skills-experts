@@ -1,0 +1,231 @@
+{
+  "name": "wechat-viral-team",
+  "version": "1.0.1",
+  "description": "A six-role WeChat editorial team that takes an article from trending topic to publish-ready draft: topic mining, longform writing, title crafting, compliance audit, visuals, and data review.",
+  "author": {
+    "name": "WeChat Viral Ops",
+    "email": "noreply@example.com"
+  },
+  "agents": [
+    "./agents/wechat-viral-team-lead.md",
+    "./agents/topic-scout.md",
+    "./agents/longform-writer.md",
+    "./agents/title-hook-smith.md",
+    "./agents/compliance-auditor.md",
+    "./agents/visual-designer.md",
+    "./agents/growth-analyst.md"
+  ],
+  "skills": [
+    "./skills/gzh-viral-ops",
+    "./skills/title-hook-lab"
+  ],
+  "expertType": "team",
+  "agentName": "wechat-viral-team-lead",
+  "teamInfo": {
+    "leadAgent": "wechat-viral-team-lead",
+    "memberAgents": [
+      "topic-scout",
+      "longform-writer",
+      "title-hook-smith",
+      "compliance-auditor",
+      "visual-designer",
+      "growth-analyst"
+    ]
+  },
+  "displayName": {
+    "en": "WeChat Viral Content Operations Team",
+    "zh": "微信公众号爆文超级运营专家团"
+  },
+  "profession": {
+    "en": "WeChat Viral Content Operations Team",
+    "zh": "微信公众号爆文超级运营专家团"
+  },
+  "displayDescription": {
+    "en": "Six specialists in topic mining, longform writing, headline crafting, compliance, visuals and data review collaborate from trending topic to publish-ready draft, with a hard gate at every step.",
+    "zh": "选题、成稿、标题、合规、配图、复盘六岗协作，从热搜到草稿箱一条流水线跑完，每步都有硬门槛把关。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "今天该写哪篇？给我 3 个能爆的选题，说清为什么能爆、能击中谁。",
+    "en": "What should I publish today? Give me 3 viral-worthy topics with the reason each one can travel."
+  },
+  "plugin": "wechat-viral-team",
+  "tags": [
+    {
+      "en": "Topic Mining",
+      "zh": "爆款选题"
+    },
+    {
+      "en": "Longform Craft",
+      "zh": "长文成稿"
+    },
+    {
+      "en": "Viral Review",
+      "zh": "数据复盘"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "今天该写哪篇？给我 3 个能爆的选题，说清为什么能爆、能击中谁。",
+      "en": "What should I publish today? Give me 3 viral-worthy topics with the reason each one can travel."
+    },
+    {
+      "zh": "把「停车按分钟计费」写成一篇能直接发的公众号爆文，我要成品。",
+      "en": "Turn \"per-minute parking billing\" into a publish-ready WeChat article. I want the finished piece."
+    },
+    {
+      "zh": "这篇数据不行，帮我查清问题出在标题、开头还是结尾。",
+      "en": "This piece underperformed. Diagnose whether the problem is the headline, the opening, or the ending."
+    }
+  ],
+  "members": [
+    {
+      "id": "wechat-viral-team-lead",
+      "name": {
+        "en": "Wen Fengqi",
+        "zh": "闻风起"
+      },
+      "displayName": {
+        "en": "Wen Fengqi",
+        "zh": "闻风起"
+      },
+      "profession": {
+        "en": "Viral Editorial Director",
+        "zh": "爆款操盘主编"
+      },
+      "description": {
+        "en": "Orchestrates the six specialists, makes the topic call, assembles the final piece and enforces every hard gate.",
+        "zh": "统筹六个岗位、决定选题取舍、汇编终稿，并卡住每一道硬门槛。"
+      },
+      "avatar": "avatars/wechat-viral-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "topic-scout",
+      "name": {
+        "en": "Zhen Youliang",
+        "zh": "甄有亮"
+      },
+      "displayName": {
+        "en": "Zhen Youliang",
+        "zh": "甄有亮"
+      },
+      "profession": {
+        "en": "Trending Topic Scout",
+        "zh": "热点选题猎手"
+      },
+      "description": {
+        "en": "Mines eight platform hot lists, cuts red-line items, scores candidates and returns the three topics worth writing.",
+        "zh": "扫八个平台热榜、剔除红线、四维打分，只交回三条真正值得写的选题。"
+      },
+      "avatar": "avatars/topic-scout.png",
+      "role": "member"
+    },
+    {
+      "id": "longform-writer",
+      "name": {
+        "en": "Liu Chengzhang",
+        "zh": "柳成章"
+      },
+      "displayName": {
+        "en": "Liu Chengzhang",
+        "zh": "柳成章"
+      },
+      "profession": {
+        "en": "Longform Viral Writer",
+        "zh": "爆款长文撰稿"
+      },
+      "description": {
+        "en": "Turns a chosen angle into a 1500-2000 character draft, then strips out the AI flavor sentence by sentence.",
+        "zh": "把定好的切入点写成 1500-2000 字成稿，再逐句去掉 AI 味。"
+      },
+      "avatar": "avatars/longform-writer.png",
+      "role": "member"
+    },
+    {
+      "id": "title-hook-smith",
+      "name": {
+        "en": "Shao Yiyan",
+        "zh": "邵一眼"
+      },
+      "displayName": {
+        "en": "Shao Yiyan",
+        "zh": "邵一眼"
+      },
+      "profession": {
+        "en": "Title & Hook Craftsman",
+        "zh": "标题与钩子打磨师"
+      },
+      "description": {
+        "en": "Writes headlines under 30 characters, plus openings and endings that actually pull comments.",
+        "zh": "写 30 字以内的标题，以及能留住人的开头和能引评论的结尾。"
+      },
+      "avatar": "avatars/title-hook-smith.png",
+      "role": "member"
+    },
+    {
+      "id": "compliance-auditor",
+      "name": {
+        "en": "Yan Shouzheng",
+        "zh": "严守正"
+      },
+      "displayName": {
+        "en": "Yan Shouzheng",
+        "zh": "严守正"
+      },
+      "profession": {
+        "en": "Compliance & Fact Auditor",
+        "zh": "合规与事实核查官"
+      },
+      "description": {
+        "en": "Checks red lines, fact verifiability and headline taboos, and names the exact sentences that must change.",
+        "zh": "查内容红线、事实可核性与标题禁区，指出必须改的具体句子。"
+      },
+      "avatar": "avatars/compliance-auditor.png",
+      "role": "member"
+    },
+    {
+      "id": "visual-designer",
+      "name": {
+        "en": "Ke Yizhen",
+        "zh": "柯一帧"
+      },
+      "displayName": {
+        "en": "Ke Yizhen",
+        "zh": "柯一帧"
+      },
+      "profession": {
+        "en": "Visual Editor",
+        "zh": "配图与视觉设计"
+      },
+      "description": {
+        "en": "Plans the image set, writes ImageGen prompts, removes watermarks and keeps both size budgets.",
+        "zh": "出配图方案与 ImageGen 提示词，去水印，控制封面与正文两档体积。"
+      },
+      "avatar": "avatars/visual-designer.png",
+      "role": "member"
+    },
+    {
+      "id": "growth-analyst",
+      "name": {
+        "en": "Zhang Youshu",
+        "zh": "章有数"
+      },
+      "displayName": {
+        "en": "Zhang Youshu",
+        "zh": "章有数"
+      },
+      "profession": {
+        "en": "Growth Analyst",
+        "zh": "数据复盘增长师"
+      },
+      "description": {
+        "en": "Reads the ledger, attributes clicks versus completion versus engagement, and names one variable to change next.",
+        "zh": "读台账数据，归因点击、完读与互动，只给一个下轮要改的变量。"
+      },
+      "avatar": "avatars/growth-analyst.png",
+      "role": "member"
+    }
+  ]
+}

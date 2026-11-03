@@ -1,0 +1,16 @@
+{
+  "id": "P01_d97_n2",
+  "day": 97,
+  "number": 2,
+  "title": "亲戚求助型",
+  "theme": "亲戚求助型",
+  "hook_type": "评论钩子",
+  "image_suggestion": "暖色调氛围感图片",
+  "content": "刚接到大姑电话，我说我自己都欠着花呗。说你这孩子真抠。挂了电话心里堵得慌。在北京我是程序员，在家里我是全家的指望，可谁知道我连信用卡还没还清。你们遇到过这种亲戚吗？",
+  "content_length": 82,
+  "status": "pending",
+  "deep_version_version": "3.0",
+  "created_at": "2026-10-21",
+  "auto_generated": true,
+  "structure": "冲突-发展-留白三段式"
+}

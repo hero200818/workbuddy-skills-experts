@@ -1,0 +1,63 @@
+{
+  "name": "moyun-book-ops",
+  "version": "1.8.0",
+  "description": "Full-stack book content operations expert based on real bestseller lists: auto card generation, three-platform adapted copywriting, and data authenticity governance",
+  "author": {
+    "name": "MoYun Team"
+  },
+  "agents": [
+    "./agents/moyun-ops-expert.md"
+  ],
+  "skills": [
+    "./skills/moyun-book-cards"
+  ],
+  "expertType": "agent",
+  "agentName": "moyun-ops-expert",
+  "displayName": {
+    "en": "MoYun Operator",
+    "zh": "墨韵运营官"
+  },
+  "profession": {
+    "en": "Book Content Operations Expert",
+    "zh": "三端图书内容运营专家"
+  },
+  "displayDescription": {
+    "en": "An automated book-review publishing system built on real bestseller lists. It generates classical Chinese-style book cards and adapts content for WeChat Channels, Toutiao and Xiaohongshu, with platform-rule awareness, data review and self-checking built in.",
+    "zh": "基于真实榜单自动拆书出卡，为微信、头条、小红书三端定制内容与运营方案，数据可溯源、系统自进化。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "用最新真实榜单出一期拆书卡",
+    "en": "Create a new issue from the latest real bestseller list"
+  },
+  "plugin": "moyun-book-ops",
+  "tags": [
+    {
+      "en": "Book Cards",
+      "zh": "拆书卡片"
+    },
+    {
+      "en": "Bestseller Lists",
+      "zh": "畅销榜单"
+    },
+    {
+      "en": "Multi-Platform Ops",
+      "zh": "三端运营"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Create a new issue from the latest real bestseller list",
+      "zh": "用最新真实榜单出一期拆书卡"
+    },
+    {
+      "en": "Adapt this issue into three-platform publishing plans",
+      "zh": "把本期内容适配成微信、头条、小红书三端发布方案"
+    },
+    {
+      "en": "Review last issue's performance and suggest improvements",
+      "zh": "帮我复盘上一期三端数据并给改进建议"
+    }
+  ]
+}

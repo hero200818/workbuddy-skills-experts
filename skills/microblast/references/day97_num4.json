@@ -1,0 +1,16 @@
+{
+  "id": "P01_d97_n4",
+  "day": 97,
+  "number": 4,
+  "title": "亲戚求助型",
+  "theme": "亲戚求助型",
+  "hook_type": "评论钩子",
+  "image_suggestion": "暖色调氛围感图片",
+  "content": "今天远房表哥打电话，我说我自己都欠着花呗。沉默了一会儿，说你咋这么不懂事。挂了电话手心有点凉。在北京我是混得好的，在家里我是混得最好的那个，可谁知道我连信用卡还没还清。你们遇到过这种亲戚吗？",
+  "content_length": 95,
+  "status": "pending",
+  "deep_version_version": "3.0",
+  "created_at": "2026-10-21",
+  "auto_generated": true,
+  "structure": "冲突-发展-留白三段式"
+}

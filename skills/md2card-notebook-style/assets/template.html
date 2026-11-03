@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD2Card Notebook Style</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --notebook-bg: #eef6ff;
+      --notebook-grid: #dbeafe;
+      --cover-blue: #5ba8ff;
+      --cover-blue-dark: #4a9eff;
+      --ring-yellow: #ffd845;
+      --ring-shadow: rgba(0, 0, 0, 0.08);
+      --card-bg: #ffffff;
+      --text-primary: #1f2937;
+      --text-secondary: #4b5563;
+      --text-muted: #6b7280;
+      --inline-code-bg: #f3f4f6;
+      --inline-code-text: #374151;
+      --code-bg: #1a1a1a;
+      --code-text: #e5e7eb;
+      --accent-green: #4ade80;
+      --accent-yellow: #fde047;
+      --tag-bg: #fde047;
+      --tag-text: #1f2937;
+      --border-radius-lg: 32px;
+      --border-radius-md: 16px;
+      --border-radius-sm: 8px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: var(--notebook-bg);
+      background-image:
+        linear-gradient(var(--notebook-grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--notebook-grid) 1px, transparent 1px);
+      background-size: 40px 40px;
+      min-height: 100vh;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .notebook-card {
+      position: relative;
+      width: 800px;
+      background: var(--cover-blue);
+      border-radius: var(--border-radius-lg);
+      padding: 24px 32px 32px 56px;
+      box-shadow:
+        0 20px 60px rgba(74, 158, 255, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    }
+
+    .notebook-card::before {
+      content: "";
+      position: absolute;
+      left: 52px;
+      top: 32px;
+      bottom: 32px;
+      width: 2px;
+      background: rgba(255, 255, 255, 0.35);
+      border-radius: 1px;
+    }
+
+    .rings {
+      position: absolute;
+      left: -18px;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+      padding: 80px 0;
+      pointer-events: none;
+    }
+
+    .ring {
+      width: 44px;
+      height: 18px;
+      background: var(--ring-yellow);
+      border-radius: 9px;
+      box-shadow:
+        0 3px 0 #e6b800,
+        0 4px 8px var(--ring-shadow);
+      position: relative;
+    }
+
+    .ring::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 12px;
+      height: 6px;
+      background: rgba(0, 0, 0, 0.08);
+      border-radius: 3px;
+    }
+
+    .card-content {
+      background: var(--card-bg);
+      border-radius: var(--border-radius-md);
+      padding: 48px 44px;
+      min-height: 400px;
+      position: relative;
+      z-index: 1;
+      box-shadow:
+        0 4px 24px rgba(0, 0, 0, 0.06),
+        inset 0 0 0 1px rgba(0, 0, 0, 0.03);
+    }
+
+    /* Markdown content styling */
+    .markdown-body h1 {
+      font-size: 42px;
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.25;
+      margin-bottom: 28px;
+      letter-spacing: -0.02em;
+    }
+
+    .markdown-body h2 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.35;
+      margin-top: 36px;
+      margin-bottom: 18px;
+    }
+
+    .markdown-body h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.4;
+      margin-top: 28px;
+      margin-bottom: 14px;
+    }
+
+    .markdown-body p {
+      font-size: 20px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .markdown-body strong {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    .markdown-body code {
+      font-family: "SF Mono", "Fira Code", "JetBrains Mono", Consolas, Monaco, monospace;
+      background: var(--inline-code-bg);
+      color: var(--inline-code-text);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+
+    .markdown-body pre {
+      background: var(--code-bg);
+      border-radius: var(--border-radius-md);
+      padding: 24px;
+      margin: 24px 0;
+      overflow-x: auto;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .markdown-body pre code {
+      background: transparent;
+      color: var(--code-text);
+      padding: 0;
+      font-size: 17px;
+      line-height: 1.7;
+      font-weight: 400;
+    }
+
+    /* Syntax highlighting colors matching the screenshot */
+    .markdown-body .hljs-keyword,
+    .markdown-body .hljs-selector-tag,
+    .markdown-body .hljs-section,
+    .markdown-body .hljs-title {
+      color: var(--accent-green);
+    }
+
+    .markdown-body .hljs-comment,
+    .markdown-body .hljs-quote {
+      color: #6b7280;
+    }
+
+    .markdown-body .hljs-string,
+    .markdown-body .hljs-literal,
+    .markdown-body .hljs-number {
+      color: #93c5fd;
+    }
+
+    .markdown-body .hljs-built_in,
+    .markdown-body .hljs-name {
+      color: #fcd34d;
+    }
+
+    .markdown-body ul,
+    .markdown-body ol {
+      margin: 18px 0;
+      padding-left: 32px;
+    }
+
+    .markdown-body li {
+      font-size: 20px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+    }
+
+    .markdown-body blockquote {
+      border-left: 5px solid var(--cover-blue);
+      background: #f8fafc;
+      padding: 18px 24px;
+      border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+      margin: 24px 0;
+      color: var(--text-secondary);
+      font-size: 19px;
+      line-height: 1.7;
+    }
+
+    .markdown-body hr {
+      border: none;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+      margin: 32px 0;
+    }
+
+    .markdown-body img {
+      max-width: 100%;
+      border-radius: var(--border-radius-sm);
+      margin: 20px 0;
+    }
+
+    .markdown-body a {
+      color: var(--cover-blue-dark);
+      text-decoration: none;
+      border-bottom: 2px solid rgba(74, 158, 255, 0.3);
+      font-weight: 500;
+    }
+
+    .markdown-body a:hover {
+      border-bottom-color: var(--cover-blue-dark);
+    }
+
+    .markdown-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 18px;
+    }
+
+    .markdown-body th,
+    .markdown-body td {
+      padding: 14px 18px;
+      border: 1px solid #e5e7eb;
+      text-align: left;
+    }
+
+    .markdown-body th {
+      background: #f8fafc;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .markdown-body tr:nth-child(even) {
+      background: #fafafa;
+    }
+
+    /* Special tag/chip style: ==highlight== syntax becomes yellow pill */
+    .markdown-body mark {
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      padding: 8px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.95em;
+      box-decoration-break: clone;
+    }
+
+    /* Green heading line inside code blocks (matches screenshot style) */
+    .markdown-body pre code .md-h {
+      color: var(--accent-green);
+    }
+  </style>
+</head>
+<body>
+  <div class="notebook-card">
+    <div class="rings">
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <div class="ring"></div>
+    </div>
+    <div class="card-content">
+      <div class="markdown-body">{{MARKDOWN_HTML}}</div>
+    </div>
+  </div>
+</body>
+</html>
